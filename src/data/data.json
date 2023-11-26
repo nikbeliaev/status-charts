@@ -1,0 +1,328 @@
+{
+  "charts": [
+    {
+      "id": 1,
+      "type": "bar",
+      "title": "Values in Russia: responses by age group, 2017",
+      "notes": "Note: Data source is Wold Values Survey, Wave 7, Russia 2017. Bar's represent percentage points of respondents agreeing with the statement on horizontal axis in their respective age group",
+      "data": [
+        {
+          "title": "Mens should have more rights to a job",
+          "ageGroup1": 35,
+          "ageGroup2": 40,
+          "ageGroup3": 39,
+          "ageGroup4": 43,
+          "ageGroup5": 40,
+          "ageGroup6": 45
+        },
+        {
+          "title": "Do not want immigrants as neighbours",
+          "ageGroup1": 32,
+          "ageGroup2": 30,
+          "ageGroup3": 31,
+          "ageGroup4": 32,
+          "ageGroup5": 28,
+          "ageGroup6": 35
+        },
+        {
+          "title": "Homosexuality is never justifiable",
+          "ageGroup1": 40,
+          "ageGroup2": 45,
+          "ageGroup3": 58,
+          "ageGroup4": 59,
+          "ageGroup5": 74,
+          "ageGroup6": 70
+        },
+        {
+          "title": "Security is more important than freedom",
+          "ageGroup1": 63,
+          "ageGroup2": 67,
+          "ageGroup3": 73,
+          "ageGroup4": 74,
+          "ageGroup5": 78,
+          "ageGroup6": 76
+        }
+      ],
+      "fields": [
+        {
+          "title": "16-24",
+          "dataKey": "ageGroup1",
+          "color": "#2F80ED"
+        },
+        {
+          "title": "25-34",
+          "dataKey": "ageGroup2",
+          "color": "#EB5757"
+        },
+        {
+          "title": "35-44",
+          "dataKey": "ageGroup3",
+          "color": "#219653"
+        },
+        {
+          "title": "45-54",
+          "dataKey": "ageGroup4",
+          "color": "#F2C94C"
+        },
+        {
+          "title": "55-64",
+          "dataKey": "ageGroup5",
+          "color": "#9B51E0"
+        },
+        {
+          "title": "65+",
+          "dataKey": "ageGroup6",
+          "color": "#940000"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "bar",
+      "title": "Поколение неверующих?",
+      "notes": "Доля верующих (средняя за 2011-2016 гг;) и доля регулярно посещающих религиозные службы (2016 г.) по поколениям, 15 лет и старше",
+      "data": [
+        {
+          "title": "Мобилизационное поколение",
+          "believers": 55.7,
+          "churchgoers": 8.0
+        },
+        {
+          "title": "Поколение оттепели",
+          "believers": 46.9,
+          "churchgoers": 15.2
+        },
+        {
+          "title": "Поколение застоя",
+          "believers": 36.7,
+          "churchgoers": 11.7
+        },
+        {
+          "title": "Реформенное поколение",
+          "believers": 34.8,
+          "churchgoers": 7.5
+        },
+        {
+          "title": "Поколение меллиниалов",
+          "believers": 31.6,
+          "churchgoers": 5.8
+        }
+      ],
+      "fields": [
+        {
+          "title": "Доля верующих, %",
+          "dataKey": "believers",
+          "color": "#2F80ED"
+        },
+        {
+          "title": "Посещали религиозные службы раз в месяц или чаще, %",
+          "dataKey": "churchgoers",
+          "color": "#EB5757"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "line",
+      "title": "How Couples Met",
+      "notes": "Source: “How couples met and stay together” survey by Stanford University",
+      "data": [
+        {
+          "name": "1940",
+          "friends": 30,
+          "coworkers": 4,
+          "bar": 10,
+          "school": 12,
+          "college": 22,
+          "church": 17,
+          "neighbours": 19,
+          "family": 30
+        },
+        {
+          "name": "1945",
+          "friends": 37,
+          "coworkers": 7,
+          "neighbours": 18,
+          "family": 28
+        },
+        {
+          "name": "1950",
+          "friends": 32,
+          "coworkers": 10,
+          "bar": 25,
+          "neighbours": 17,
+          "family": 26
+        },
+        {
+          "name": "1955",
+          "friends": 30,
+          "coworkers": 12,
+          "neighbours": 16,
+          "family": 25
+        },
+        {
+          "name": "1960",
+          "friends": 42,
+          "coworkers": 15,
+          "neighbours": 15,
+          "family": 24
+        },
+        {
+          "name": "1965",
+          "friends": 45,
+          "coworkers": 18,
+          "school": 21,
+          "college": 31,
+          "neighbours": 14,
+          "family": 21
+        },
+        {
+          "name": "1970",
+          "friends": 50,
+          "coworkers": 22,
+          "neighbours": 14,
+          "family": 20
+        },
+        {
+          "name": "1975",
+          "friends": 50,
+          "coworkers": 24,
+          "bar": 25,
+          "neighbours": 13,
+          "family": 18
+        },
+        {
+          "name": "1980",
+          "friends": 51,
+          "online": 1,
+          "coworkers": 26,
+          "neighbours": 13,
+          "family": 15
+        },
+        {
+          "name": "1985",
+          "friends": 53,
+          "online": 1,
+          "coworkers": 28,
+          "church": 8,
+          "neighbours": 12,
+          "family": 13
+        },
+        {
+          "name": "1990",
+          "friends": 50,
+          "online": 2,
+          "coworkers": 29,
+          "college": 28,
+          "neighbours": 12,
+          "family": 12
+        },
+        {
+          "name": "1995",
+          "friends": 47,
+          "online": 5,
+          "coworkers": 30,
+          "bar": 36,
+          "school": 19,
+          "neighbours": 11,
+          "family": 10
+        },
+        {
+          "name": "2000",
+          "friends": 42,
+          "online": 10,
+          "coworkers": 32,
+          "school": 25,
+          "college": 35,
+          "neighbours": 10,
+          "family": 7
+        },
+        {
+          "name": "2005",
+          "friends": 37,
+          "online": 14,
+          "coworkers": 34,
+          "bar": 33,
+          "neighbours": 10,
+          "family": 5
+        },
+        {
+          "name": "2010",
+          "friends": 31,
+          "online": 22,
+          "coworkers": 28,
+          "neighbours": 9,
+          "family": 3
+        },
+        {
+          "name": "2015",
+          "friends": 20,
+          "online": 40,
+          "coworkers": 24,
+          "neighbours": 8,
+          "family": 2
+        },
+        {
+          "name": "2020",
+          "friends": 5,
+          "online": 67,
+          "coworkers": 18,
+          "bar": 38,
+          "school": 31,
+          "college": 38,
+          "church": 3,
+          "neighbours": 7,
+          "family": 1
+        }
+      ],
+      "fields": [
+        {
+          "title": "Met through friends",
+          "dataKey": "friends",
+          "color": "#2F80ED"
+        },
+        {
+          "title": "Met online",
+          "dataKey": "online",
+          "color": "#EB5757"
+        },
+        {
+          "title": "Coworkers",
+          "dataKey": "coworkers",
+          "color": "#017E37"
+        },
+        {
+          "title": "Bar/Restraunt",
+          "dataKey": "bar",
+          "color": "#9B51E0"
+        },
+        {
+          "title": "Met in school",
+          "dataKey": "school",
+          "color": "#044CD8"
+        },
+        {
+          "title": "Met in college",
+          "dataKey": "college",
+          "color": "#940000"
+        },
+        {
+          "title": "Met in church",
+          "dataKey": "church",
+          "color": "#27AE60"
+        },
+        {
+          "title": "Neighbours",
+          "dataKey": "neighbours",
+          "color": "#F2994A"
+        },
+        {
+          "title": "Family",
+          "dataKey": "family",
+          "color": "#333333"
+        }
+      ]
+    }
+  ]
+}
+

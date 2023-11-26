@@ -1,0 +1,42 @@
+.recharts-yAxis .recharts-cartesian-axis-tick:first-child line {
+    stroke: none;
+}
+.recharts-yAxis .recharts-cartesian-axis-tick:first-child text {
+    font-size: 0;
+}
+
+.recharts-yAxis line {
+    stroke: none;
+}
+
+.recharts-xAxis line {
+    stroke: #828282;
+}
+
+.recharts-cartesian-axis-tick text {
+    font-weight: 700;
+}
+
+.recharts-xAxis .recharts-cartesian-axis-tick text {
+    transform: translateY(10px);
+}
+
+.linechart .recharts-cartesian-axis-tick:first-child text {
+    text-anchor: start;
+}
+
+.linechart .recharts-cartesian-axis-tick:last-child text {
+    text-anchor: end;
+}
+
+.recharts-cartesian-axis-tick text {
+    font-weight: 700;
+    font-size: 16px;
+    fill: #333333;
+}
+
+.recharts-label {
+    font-weight: 500;
+    font-size: 14px;
+    fill: #333333;
+}
