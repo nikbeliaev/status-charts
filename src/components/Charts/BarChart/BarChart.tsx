@@ -34,18 +34,24 @@ export default function CustomBarChart(props: BarChartProps) {
         const { visibleTicksCount, width, height, x, y, payload } = props;    
         return (
             <g>
-                <foreignObject width={width/visibleTicksCount} height={height} x={x-payload.offset} y={y}
-                    requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                    <p className="px-3 text-center font-medium">{payload.value}</p>
+                <foreignObject 
+                    width={width/visibleTicksCount}
+                    height={height}
+                    x={x-payload.offset}
+                    y={y}
+                    requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                    style={{overflow: "visible"}}
+                >
+                    <p className="px-3 text-center font-medium break-words hyphens-auto">{payload.value}</p>
                 </foreignObject>
             </g>
         );
     };
 
     return(
-        <div className="chart h-80 w-full -ml-3 m-auto barchart">
-            <ResponsiveContainer>
-                <BarChart data={data} width={600} height={300} barGap={  0} {...{overflow: "visible"}}>
+        <div className="chart w-full -ml-3 m-auto barchart">
+            <ResponsiveContainer aspect={3}>
+                <BarChart data={data} barGap={0} {...{overflow: "visible"}}>
                     <XAxis dataKey="title" height={70} tickSize={12} interval={0} tick={customizedGroupTick}/>
                     <YAxis domain={[0, 80]} tickFormatter={(tick) => `${tick}%`} />
                     <CartesianGrid vertical={false}/>

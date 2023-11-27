@@ -30,7 +30,7 @@ export default function ChartCard({ chartId }: ChartCardProps) {
   }, [chartId]);
 
   return (
-    data && (<article className="w-5/6 mx-auto mb-12 border border-[#E4E4E4] rounded-md">
+    data && (<article className="w-5/6 min-w-[600px] m-auto border border-[#E4E4E4] rounded-md">
       <header className="mb-3 px-4 py-3 bg-[#E4E4E4]">
         <h1 className="font-bold text-xl leading-6">{data.title}</h1>
       </header>

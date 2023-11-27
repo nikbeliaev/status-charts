@@ -40,3 +40,7 @@
     font-size: 14px;
     fill: #333333;
 }
+
+.recharts-line-curve {
+    transition: opacity 0.2s ease-in
+}
