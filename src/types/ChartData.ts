@@ -5,10 +5,17 @@ export type ChartField = {
 }
 
 export type ChartData = {
-    id: number,
     type: 'line' | 'bar',
     title: string,
     notes: string,
     data: any[],
     fields: ChartField[],
+    units?: {
+        axis?: string,
+        data?: string
+    },
+    domain?: {
+        min?: number,
+        max?: number,
+    }
 }

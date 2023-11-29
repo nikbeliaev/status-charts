@@ -28,8 +28,7 @@ type CustomizedTickProps = {
 }
 
 export default function CustomBarChart(props: BarChartProps) {
-    const { data, fields } = props.data;
-
+    const { data, fields, units, domain } = props.data;
     const customizedGroupTick = (props: CustomizedTickProps) => {
         const { visibleTicksCount, width, height, x, y, payload } = props;    
         return (
@@ -53,7 +52,10 @@ export default function CustomBarChart(props: BarChartProps) {
             <ResponsiveContainer aspect={3}>
                 <BarChart data={data} barGap={0} {...{overflow: "visible"}}>
                     <XAxis dataKey="title" height={70} tickSize={12} interval={0} tick={customizedGroupTick}/>
-                    <YAxis domain={[0, 80]} tickFormatter={(tick) => `${tick}%`} />
+                    <YAxis
+                        domain={[Number(domain?.min) || 'auto', Number(domain?.max) || 'auto']}
+                        unit={units?.axis || ""} />
+
                     <CartesianGrid vertical={false}/>
                     {fields.map(({dataKey, color}: ChartField) => (
                             <Bar
@@ -61,7 +63,7 @@ export default function CustomBarChart(props: BarChartProps) {
                                 dataKey={dataKey}
                                 fill={color}
                             >
-                                <LabelList dataKey={dataKey} formatter={(label: string) => label + '   '} position="top" />
+                                <LabelList dataKey={dataKey} formatter={(label: string) => label + (units?.data || "")} position="top" />
                             </Bar>
                         )
                     )}

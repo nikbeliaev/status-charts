@@ -1,3 +1,5 @@
+import { toast } from "react-toastify"
+
 type ErrorType = Error | unknown | string
 
 export const ERROR_MESSAGES = {
@@ -7,4 +9,5 @@ export const ERROR_MESSAGES = {
 
 export function handleError(err: ErrorType) {
     console.error(err)
+    toast.error(err?.toString())
 }

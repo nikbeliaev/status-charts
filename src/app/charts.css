@@ -44,3 +44,17 @@
 .recharts-line-curve {
     transition: opacity 0.2s ease-in
 }
+
+@media (prefers-color-scheme: dark) {
+    .recharts-xAxis line {
+        stroke: #fff;
+    }
+
+    .recharts-cartesian-axis-tick text {
+        fill: #fff;
+    }
+
+    .recharts-label {
+        fill: #fff;
+    }
+  }

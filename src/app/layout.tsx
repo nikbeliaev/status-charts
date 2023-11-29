@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google';
+import { ToastContainer } from 'react-toastify';
+
+import { AuthContextProvider } from '@/context/AuthContext';
+import PageHeader from '@/components/PageHeader/PageHeader';
+
 import './globals.css'
 import './charts.css'
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,8 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
+      <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white`}>
+        <AuthContextProvider>
+          <PageHeader />
+          {children}
+          <ToastContainer />
+        </AuthContextProvider>
       </body>
     </html>
   )
